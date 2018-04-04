@@ -1,16 +1,9 @@
-<script language="javascript" type="text/javascript">
-<!--
-function initInput()
-	{
-	var variable = somevalue;
-	document.forms[0].fid_17.value = variable;
-	}
-//-->
+<script>
+	var firstName = document.getElementsByName("firstname")[0].value;
+	function formChanged() {
+    var firstName = ...
+    var lastName = ...
+}
 </script>
-</head>
 
-<body onLoad="initInput()">
-	<form>
-	<input name="fid_17" id="fid_17" value="">
-	</form>
-</body>
+<input type="text" name="firstname" onkeyup="formChanged()" onchange="formChanged()"/>
